@@ -1,7 +1,14 @@
 # SH-I
 
 import pandas as pd
-import matlab.engine
+try:
+    import matlab.engine
+except:
+    print('This file uses matlab.engine and DrawGlyacn SNFG.')
+    print('Matlab installation is required for use.')
+    exit()
+    
+os.makedirs('glycan_drawings', exist_ok = True)
 
 def draw(glycan, filename):
 
@@ -49,7 +56,7 @@ def draw_error(glycan, filename):
 
     eng.quit()
 
-data = pd.read_csv('glycan_drawings/glycans.csv')
+data = pd.read_csv('glycans.csv')
 
 for index, glycan in zip(data['Index'], data['IUPAC']):
 

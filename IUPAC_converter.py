@@ -69,3 +69,7 @@ def lac(str):
     iupac = str.replace('Lac', 'Gal(b1-4)Glc')
 
     return iupac
+
+if __name__ == '__main__':
+    print('This file needs to be imported.')
+    print('Read the function docs for use.')
