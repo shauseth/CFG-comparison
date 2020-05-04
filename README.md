@@ -1,5 +1,7 @@
 # CFG and LiGA Comparison
 
+Python scripts used in [Genetically Encoded, Multivalent Liquid Glycan Array (LiGA)](https://www.biorxiv.org/content/10.1101/2020.03.24.997536v1)
+
 ### Script use:
 
 ```shell
